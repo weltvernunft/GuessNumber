@@ -19,7 +19,7 @@ const displayMessage = function (message) {
 //Play again event
 document.querySelector('.again-btn').addEventListener('click', function () {
   guessedNum = Math.trunc(Math.random() * 20 + 1);
-  document.querySelector('.number').textContent = guessedNum;
+  document.querySelector('.number').textContent = '?';
   document.querySelector('.input-num').value = '';
   displayMessage('⛔ No number given, set the value, filthy dickhead!');
   guessed = false;
