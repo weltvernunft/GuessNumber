@@ -50,7 +50,7 @@ document.querySelector('.check-btn').addEventListener('click', function () {
         document.querySelector('.highscore').textContent = score;
       }
     } else if (numValue != guessedNum) {
-      if (score > 1) {
+      if (score >= 1) {
         displayMessage(
           numValue > guessedNum
             ? 'Are you dumb or what? 🤦🏾‍♀️ Drop down the value a little . . . '
