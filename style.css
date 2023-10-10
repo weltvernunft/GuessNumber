@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: radial-gradient(#675B67, #3F373F);
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+}
+
+.Title {
+  font-size: 3rem;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 30px;
+}
+
+button {
+  border: 2px solid white;
+  width: 250px;
+  height: 50px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.number {
+  font-size: 3rem;
+  margin: 20px auto;
+  margin-bottom: 50px;
+  background-color: #181518;
+  color: white;
+  width: 60px;
+  height: 70px;
+  text-align: center;
+  &:before {
+    border-top: 2px solid #181518;
+    content: '';
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 410px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+div.bt-menu {
+  width: 800px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  align-items:flex-end;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input.input-num {
+  border: 2px solid white;
+  background-color: transparent;
+  width: 250px;
+  height: 50px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
+div.score-count {
+  flex-basis: 60%;
+  color: white;
+}
+
+.enter-check {
+  display: flex;
+  flex-direction: column;
+}
+
+.guess-menu {
+  margin-right: 25px;
+}
+
+div.score-count {
+  font-size: 28px;
+}
+
+div.score-count > p {
+  margin-bottom: 10px;
+}
+
+.top-menu {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 800px;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+
+.top-menu > p {
+  color: white;
+  font-size: 2rem;
+}
