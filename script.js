@@ -54,7 +54,7 @@ document.querySelector('.check-btn').addEventListener('click', function () {
         displayMessage(
           numValue > guessedNum
             ? 'Are you dumb or what? 🤦🏾‍♀️ Drop down the value a little . . . '
-            : 'The value should be raised, like my cock behind your cheek . . . '
+            : 'The value should be raised, like my cock behind your cheek 💎 . . . '
         );
         score--;
         document.querySelector('.score').textContent = score;
